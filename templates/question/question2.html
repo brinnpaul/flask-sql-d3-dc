@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="spacer"></div>
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h2> Question 2 <h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Democracy Around the World
+          </div>
+          <div class="chart-stage">
+            <div id="dem-world-chart"></div>
+          </div>
+        </div>
+
+      </div>
+
+    <div class="col-sm-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Average Democracy Index by Income
+          </div>
+          <div class="chart-stage">
+            <div id="avg-dem-chart"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Conflict Around the World
+          </div>
+          <div class="chart-stage">
+            <div id="conflict-world-chart"></div>
+          </div>
+        </div>
+
+      </div>
+    <div class="col-sm-4">
+
+      <div class="chart-wrapper">
+        <div class="chart-title">
+          Average Conflict Intensity by Income
+        </div>
+        <div class="chart-stage">
+          <div id="avg-conflict-chart"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<script src="./static/lib/js/jquery.min.js"></script>
+<script src="./static/lib/js/bootstrap.min.js"></script>
+<script src="./static/lib/js/crossfilter.js"></script>
+<script src="./static/lib/js/d3.js"></script>
+<script src="./static/lib/js/dc.js"></script>
+<script src="./static/lib/js/queue.js"></script>
+<script src="./static/lib/js/keen.min.js"></script>
+<script src='./static/js/question/question2.js' type='text/javascript'></script>
+{% endblock %}

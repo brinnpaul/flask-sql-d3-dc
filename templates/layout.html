@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+  <title>Data Viz</title>
+  <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
+  <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+  <link rel="stylesheet" href="./static/lib/css/dc.css">
+  <link rel="stylesheet" href="./static/css/custom.css">
+
+
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./">Simon SQL Data Visualization</a>
+        <ul class="menu" style="block">
+          <li><a href="{{ url_for('index') }}">Index</a></li>
+          <li><a href="{{ url_for('question1') }}">Q1</a></li>
+          <li><a href="{{ url_for('question2') }}">Q2</a></li>
+          <li><a href="{{ url_for('question3') }}">Q3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+  </div>
+
+
+    <hr>
+    <p class="small text-muted">Brinn Riordan:
+      <a href="https://github.com/brinnpaul" target="_blank">Github</a>
+      <a href="https://www.linkedin.com/in/brinn-riordan" target="_blank">LinkedIn</a>
+     </p>
+
+  </div>
+
+</body>
+</html>
